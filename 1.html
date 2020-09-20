@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1 html5</title>
+	<script>
+	function getCoordinates() {
+	navigator.geolocation.getCurrentPosition(showCoordinates);
+	}
+	function showCoordinates(position) {
+	document.write("Широта:" + position.coords.latitude + "<br/>");
+	document.write("Долгота:" + position.coords.longitude);
+	}
+	</script>
+</head>
+<body>
+
+	<h2 style="color:#fb21ff; text-align:center">Я, <mark style="color:#fb21ff">Кравченко Анна</mark>, изучаю HTML5</h2>
+	<video src="Если вы забыли о том, как себя любить.mp4" width="500" height="300"controls="controls"></video>
+<h3>Для считывания координат нажмите на кнопку</h3>
+	<input type="button" value=" Координаты" onclick =
+	"getCoordinates()"><br>
+
+	<p style="position: absolute; top:500px; left: 15px; font-size: 20px">Harry Styles-Adore You</p>
+
+	<audio style="position: absolute; top:550px; left: 10px"  src="muzlome_Harry_Styles_-_Adore_You_67565684.mp3" controls="controls"> 
+	</audio>
+</body>
+</html>
